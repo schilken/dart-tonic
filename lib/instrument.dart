@@ -21,6 +21,7 @@ class Instrument {
   bool get fretted => false;
 
   static final FrettedInstrument guitar = Instrument.lookup('Guitar');
+  static final FrettedInstrument ukulele = Instrument.lookup('Ukulele');
 
   static bool _initialized = false;
 
@@ -79,7 +80,13 @@ final _instrumentSpecs = [
   {
     'name': 'Cello',
     'stringPitches': 'C2 G2 D3 A3',
-  }
+  },
+  {
+    'name': 'Ukulele',
+    'stringPitches': 'G4 C4 E4 A4',
+    'fretted': true,
+    'fretCount': 12,
+  },
 ];
 
 // FretNumbers = [0..4]  # includes nut
